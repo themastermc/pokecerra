@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
 
+:root{
+    --main-bg-color: #ffd200;
+}
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -10,7 +15,7 @@
 }
 
 body{
-    background-color: #ffd200;
+    background-color: var(--main-bg-color);
 }
 
 .fondo{
@@ -70,14 +75,15 @@ body{
 
 .pokemon{
     border-radius: 10px;
+    padding: 10px;
     box-shadow: 0 0 3rem -1rem rgb(0, 0, 2.24);
     position: relative;
     isolation: isolate;
     overflow: hidden;
     text-align: center;
     transition: all 200ms ease;
-    cursor: pointer;
-    background-color: #fafafa;
+    background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 .pokemon:hover{
@@ -92,6 +98,14 @@ body{
     font-size: 10rem;
     font-weight: 1000;
     color: #bbbbbb;
+}
+
+.pokemon .descripcion{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+
 }
 
 @media (min-width: 500px){

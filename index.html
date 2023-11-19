@@ -19,7 +19,10 @@
                 <img src="imagenes/background-min.webp" alt="" class="fondo fondo-celular">
             </div>
     </header>
-
+    <form id="searchForm">
+        <label for="pokemonInput">Buscar Pokémon:</label>
+        <input type="text" id="searchBar" placeholder="Ingrese el nombre o número">
+    </form>
     <main>
         <div class="main">    
             <div class="container">
@@ -31,8 +34,8 @@
                                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="">
                             </div>
                             <div class="descripcion">
-                                <div class="id-pokemon">#01</div>
-                                <h2 class="nombre">bulbasour</h2>
+                                <div class="desc id-pokemon">#01</div>
+                                <h2 class="desc nombre">bulbasour</h2>
                             </div>
                             <div class="tipo">
                                 <p class="planta tipo">planta</p>
@@ -48,7 +51,8 @@
             </div>
         </div>
     </main>
-
+    <script src="../js/gen1.js"></script>
+    <script src="../js/browser.js"></script>
 
 </body>
 </html>
