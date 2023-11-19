@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <script src="js/index.js"></script>
-    
+    <title>Pokemon - Primera Generacion</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <script src="../js/gen1.js"></script>
+    <script src="../js/browser.js"></script>
 </head>
 <body>
     <header>
             <nav>
                 <div class="img-nav">
-                    <img src="imagenes/pokemon-title.png" alt="">
+                    <img src="../imagenes/pokemon-title.png" alt="">
                 </div>
             </nav>
             <div class="fondo-container">
-                <img src="imagenes/background.webp" alt="" class="fondo fondo-computadora">
-                <img src="imagenes/background-min.webp" alt="" class="fondo fondo-celular">
+                <img src="../imagenes/background.webp" alt="" class="fondo fondo-computadora">
+                <img src="../imagenes/background-min.webp" alt="" class="fondo fondo-celular">
             </div>
     </header>
     
+    <form id="searchForm">
+        <label for="pokemonInput">Buscar Pokémon:</label>
+        <input type="text" id="searchBar" placeholder="Ingrese el nombre o número">
+    </form>
+    
     <main>
+        
         <div class="main">    
             <div class="container">
                 <div class="container-pokemon" id="listaPokemon">
@@ -32,8 +38,8 @@
                                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="">
                             </div>
                             <div class="descripcion">
-                                <div class="desc id-pokemon">#01</div>
-                                <h2 class="desc nombre">bulbasour</h2>
+                                <div class="id-pokemon">#01</div>
+                                <h2 class="nombre">bulbasour</h2>
                             </div>
                             <div class="tipo">
                                 <p class="planta tipo">planta</p>
@@ -49,8 +55,7 @@
             </div>
         </div>
     </main>
-    <script src="../js/gen1.js"></script>
-    <script src="../js/browser.js"></script>
+
 
 </body>
 </html>
