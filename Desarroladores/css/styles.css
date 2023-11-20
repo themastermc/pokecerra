@@ -1,0 +1,31 @@
+.imagenes{
+    margin-left:20% ;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto); 
+}
+
+img{
+    width: 800px;
+}
+
+h1{
+    font-size: 50px;
+    color: yellow;
+    text-shadow: 4px 4px 25px rgba(0,34,255,1);
+    text-align: center;
+}
+h2{
+    padding: 0;
+    margin: 0;
+    color: yellow;
+    text-shadow: 4px 4px 25px rgba(0,34,255,1);
+}
+body{
+    background-image: url('bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
