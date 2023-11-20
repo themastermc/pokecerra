@@ -11,23 +11,31 @@
 <body>
     <header>
             <nav>
+                <ul class="links">
+                    <li class="cat-link"><a href="../html/gen2.html">gen2</a></li>
+                    <li class="cat-link"><a href="../html/gen3.html">gen3</a></li>
+                    <li class="cat-link"><a href="../html/gen4.html">gen4</a></li>
+                    <li class="cat-link"><a href="../html/gen5.html">gen5</a></li>
+                    <li class="cat-link"><a href="../html/gen6.html">gen6</a></li>
+                    <li class="cat-link"><a href="../html/gen7.html">gen7</a></li>
+                    <li class="cat-link"><a href="../html/gen8.html">gen8</a></li>
+                    <li class="cat-link"><a href="../html/gen9.html">gen9</a></li>
+                </ul>
                 <div class="img-nav">
-                    <img src="../imagenes/pokemon-title.png" alt="">
+                    <a href="../html/gen1.html"><img src="../imagenes/pokemon-title.png" alt=""></a>
                 </div>
+                <p class="text-generation">Generacion 7°</p>
             </nav>
-            <div class="fondo-container">
-                <img src="../imagenes/background.webp" alt="" class="fondo fondo-computadora">
-                <img src="../imagenes/background-min.webp" alt="" class="fondo fondo-celular">
-            </div>
+            <img src="../imagenes/background.webp" alt="" class="fondo fondo-computadora">
+            <img src="../imagenes/background-min.webp" alt="" class="fondo fondo-celular">      
     </header>
     
-    <form id="searchForm">
-        <label for="pokemonInput">Buscar Pokémon:</label>
-        <input type="text" id="searchBar" placeholder="Ingrese el nombre o número">
-    </form>
-    
     <main>
-        
+        <div class="search-container">
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchBar" class="search" placeholder="Ingrese el nombre">
+            </form>  
+        </div>
         <div class="main">    
             <div class="container">
                 <div class="container-pokemon" id="listaPokemon">
@@ -55,7 +63,16 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>Creadores: LEONEL TORRES - NICOLAS GONZALEZ - FABRICIO CARMONA</p>
+        <div class="container-img">
+            <img class="img-footer" src="../imagenes/Pokecerra-20-11-2023.png" alt="">
+        </div>
+        <p>Copyright /Todos los Derechos reservados/</p>
+    </footer>
 
+    <script src="../js/gen7.js"></script>
+    <script src="../js/browser.js"></script>
 
 </body>
 </html>
